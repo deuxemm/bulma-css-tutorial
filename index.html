@@ -13,6 +13,7 @@
 <body>
 
     <nav class="navbar is-primary">
+
         <!-- logo / brand -->
         <div class="navbar-brand">
             <a class="navbar-item">
@@ -52,26 +53,83 @@
     <section class="section">
         <div class="container">
             <div class="columns is-vcentered">
-                
+
                 <div class="column is-3">
-                    <h1 class="is-size-1 title">Docker</h1>
-                    <h2 class="is-size-2 subtitle">Dark Roast</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum commodi eaque quas a consectetur repudiandae. Sint nesciunt quae quo libero!</p>
+                    <h1 class="is-size-3-tablet is-size-1-desktop title">Docker</h1>
+                    <h2 class="is-size-3-tablet is-size-2-desktop subtitle">Dark Roast</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum commodi eaque quas a consectetur
+                        repudiandae. Sint nesciunt quae quo libero!</p>
                 </div>
 
-                <div class="column is-5 has-text-centered">
+                <div class="column is-5-desktop has-text-centered">
                     <img src="images/product.png" alt="docker coffee image" class="px-6">
 
                 </div>
-                
-                <div class="column is-4">
+
+                <div class="column is-4-desktop">
                     <div class="is-size-4 mb-4">£10.95</div>
-                    <p class="is-size-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, eveniet.</p>
+                    <p class="is-size-4 mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus,
+                        eveniet.</p>
                 </div>
             </div>
         </div>
     </section>
 
+
+    <section class="section">
+        <div class=" container">
+            <div class="columns is-8 is-variable">
+
+                <div class="column is-7-tablet">
+                    <!-- tabbed content -->
+
+                    <div class="tabs is-boxed">
+                        <ul>
+                            <li class="is-active" data-target="product-details">
+                                <a>Product Details</a>
+                            </li>
+                            <li data-target="delivery-information">
+                                <a>Delivery Information</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="px-2" id="tab-content">
+                        <div id="product-details">
+                            <h3 class="is-size-h5-title">Product Details</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore veritatis, eum culpa
+                                modi voluptatibus ducimus ut atque earum a recusandae explicabo corrupti necessitatibus.
+                                Cum alias provident suscipit. Sunt, ex amet?</p>
+                        </div>
+
+                        <div id="delivery-information" class="is-hidden">
+                            <h3 class="is-size-h5-title">Delivery Information</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore veritatis, eum culpa
+                                modi voluptatibus ducimus ut atque earum a recusandae explicabo corrupti necessitatibus.
+                                Cum alias provident suscipit. Sunt, ex amet?</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="column is-5-tablet">
+                    <!-- message box -->
+                    <div class="message">
+                        <div class="message-header">
+                            <p>Earn Points with the Coffee Club</p>
+                        </div>
+                        <div class="message-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi unde possimus excepturi ratione voluptate obcaecati et beatae porro, dolores blanditiis molestiae, doloremque tenetur. Amet sapiente error ratione ipsa? Repudiandae, quia.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
     <script src="js/index.js"></script>
